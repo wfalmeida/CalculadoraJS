@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Calculadora</h1>
+    </header>
+    <main>
+        <div class="container-calculadora">
+            <div class="display" id="display"></div>
+            <div class="digitos">
+                <!--Linha um -->
+                <button class = "clear" onclick = "clearAll()">C</button>
+                <button onclick = "backspace()">&larr;</button>
+                <button onclick = "insert('/')">/</button>
+                <!--Linha dois -->
+                <button onclick = "insert(7)">7</button>
+                <button onclick = "insert(8)">8</button>
+                <button onclick = "insert(9)">9</button>
+                <button onclick = "insert('*')">*</button>
+                <!--Linha três-->
+                <button onclick = "insert(4)">4</button>
+                <button onclick = "insert(5)">5</button>
+                <button onclick = "insert(6)">6</button>
+                <button onclick = "insert('-')">-</button>
+                <!--Linha quatro-->
+                <button onclick = "insert(1)">1</button>
+                <button onclick = "insert(2)">2</button>
+                <button onclick = "insert(3)">3</button>
+                <button onclick = "insert('+')">+</button>
+                <!--Linha cinco-->
+                <button>&plusmn;</button>
+                <button onclick = "insert(0)">0</button>
+                <button onclick = "insert('.')">,</button>
+                <button onclick = "result()">=</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="autor">&copy; WFAlmeida</p>
+    </footer>
+    <script src="./calculator.js"></script>
+</body>
+</html>

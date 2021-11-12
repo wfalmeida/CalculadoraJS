@@ -1,0 +1,77 @@
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(38, 121, 121);
+}
+
+.titulo{
+    font-size: 2rem;
+    text-align: center;
+    margin: 18px 0;
+    color: azure;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.container-calculadora{
+    background-color: black;
+    min-width: 300px;
+    width: 300px;
+    min-height: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.container-calculadora .display{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: azure;
+    width: 90%;
+    height: 50px;
+    border-radius: 2px;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    word-break: break-all;
+    overflow: auto;
+}
+
+.container-calculadora .digitos{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.container-calculadora .digitos .clear{
+    grid-column: span 2;
+}
+
+.digitos button{
+    height: 50px;
+    transition: background-color 0.3s ease-out; 
+    border: none;  
+}
+
+.digitos button:hover{
+    transform: scale(1.1);
+    background-color: rgb(38, 121, 121);
+}
+
+.autor{
+    margin: 20px 0;
+    text-align: center;
+}
